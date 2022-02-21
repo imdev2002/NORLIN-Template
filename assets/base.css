@@ -1,0 +1,101 @@
+:root {
+  --background-title: linear-gradient(
+    90deg,
+    #ff7b7b -5.19%,
+    rgba(15, 14, 21, 0) 100%
+  );
+  --primary-color: #ff7b7b;
+  --white-color: #fff;
+  --text-color: #aaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #0f0e15;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(9, 8, 15, 0.9);
+  z-index: 3;
+  backdrop-filter: saturate(180%) blur(18px);
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #17151e;
+  color: var(--white-color);
+}
+
+.btn {
+  max-width: 412px;
+  color: var(--white-color);
+  background: #09080f;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  transition: all 0.2s linear;
+}
+
+.btn:hover {
+  background: #17151e;
+}
+
+/* LABEL LIST  */
+.label-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.label-item {
+}
+
+.label-item-link {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 4px 14px;
+  border: 2px solid var(--text-color);
+  border-radius: 14px;
+  transition: all 0.2s;
+}
+
+.label-item-link:hover {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.widget {
+  margin-bottom: 36px;
+}

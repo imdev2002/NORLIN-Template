@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header padding-l-r-20">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col c-12 m-12 c-12">
+                        <div class="header__container">
+                            <div class="header__logo">
+                                <a href="/" class="header__logo-link">Norlin</a>
+                            </div>
+                            <ul class="header__menu-list hide-on-mobile-tablet">
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Home</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">About</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Author</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Elements</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Story</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Login</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link header__menu-link--signup">Sign Up</a>
+                                </li>
+                            </ul>
+                            <input type="checkbox" hidden id="menu-mb-checkbox" class="btn-navbar-toggle">
+                            <ul class="header__menu-list-mb">
+                                
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Home</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">About</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Author</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Elements</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Story</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Login</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link header__menu-link--signup">Sign Up</a>
+                                </li>
+                            </ul>
+                            <div class="overlay"></div>
+                            <label for="menu-mb-checkbox" class="header__menu-mb-close">
+                                <ion-icon name="close-outline" class="menu-mb__close"></ion-icon>
+                            </label>
+                            <div class="header__btns">
+
+                                <label for="menu-mb-checkbox" class="header__menu-mb">
+                                    <ion-icon name="menu-outline" class="header__menu-mb-icon"></ion-icon>
+                                </label>
+                                <label for="search-checkbox" class="header__search">
+                                    <ion-icon name="search-outline" class="header__search-icon"></ion-icon>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="intro__bg">
+                <img src="./assets/images/intro.jpg" alt="Norlin" class="intro__bg-img">
+            </div>
+            <div class="intro__content">
+                <h1 class="intro__content-title">Norlin</h1>
+                <p class="intro__content-describe">Thoughts, stories and ideas.</p>
+            </div>
+        </div>
+        <!-- SEARCH BOX -->
+        <input type="checkbox" hidden id="search-checkbox" class="btn-search-toggle">
+        <div class="overlay"></div>
+        <div class="search-box">            
+            <input type="text" id="" class="search-box__inp" placeholder="Type to search...">
+            <label for="search-checkbox" class="search-box__close">
+                <ion-icon name="close-outline" class="search-box__close-icon"></ion-icon>
+            </label>
+        </div>
+        <div class="app__container padding-l-r-20">
+            <div class="grid wide">
+                <!-- HOME POSTS  -->
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="home-posts">
+                            <div class="row">
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="home-posts__item">
+                                        <div class="home-posts__mark">
+                                            <ion-icon name="star-outline" class="home-posts__mark-icon"></ion-icon>
+                                        </div>
+                                        <a href="#" class="home-posts__img" style="background-image: url(./assets/images/1.jpg);"></a>
+                                        <div class="home-posts__content">
+                                            <div class="home-posts__release">
+                                                <span class="home-posts__release-minutes">2 min read</span>
+                                                <span class="home-posts__release-date">Nov 19, 2020</span>
+                                            </div>
+                                            <h2 class="home-posts__content-title">Believe and act as if it were impossible to fail</h2>
+                                            <p class="home-posts__content-excerp">Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum. Haec et tu ita posuisti, et verba vestra sunt. Idemne potest esse dies sa</p>
+                                            <div class="home-posts__bottom">
+                                                <a href="https://www.facebook.com/NDK20" class="home-posts__author">
+                                                    <img src="./assets/images/avt-author.jpg" alt="" class="home-posts__author-img">
+                                                    <span class="home-posts__author-name">Nguyễn Đăng Khải</span>
+                                                </a>
+                                                <div class="home-posts__label">
+                                                    <ul class="label-list">
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Life</a>
+                                                        </li>
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Rest</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="home-posts__item">
+                                        <div class="home-posts__mark">
+                                            <ion-icon name="star-outline" class="home-posts__mark-icon"></ion-icon>
+                                        </div>
+                                        <a href="#" class="home-posts__img" style="background-image: url(./assets/images/1.jpg);"></a>
+                                        <div class="home-posts__content">
+                                            <div class="home-posts__release">
+                                                <span class="home-posts__release-minutes">2 min read</span>
+                                                <span class="home-posts__release-date">Nov 19, 2020</span>
+                                            </div>
+                                            <h2 class="home-posts__content-title">Believe and act as if it were impossible to fail</h2>
+                                            <p class="home-posts__content-excerp">Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum. Haec et tu ita posuisti, et verba vestra sunt. Idemne potest esse dies sa</p>
+                                            <div class="home-posts__bottom">
+                                                <a href="https://www.facebook.com/NDK20" class="home-posts__author">
+                                                    <img src="./assets/images/avt-author.jpg" alt="" class="home-posts__author-img">
+                                                    <span class="home-posts__author-name">Nguyễn Đăng Khải</span>
+                                                </a>
+                                                <div class="home-posts__label">
+                                                    <ul class="label-list">
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Life</a>
+                                                        </li>
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Rest</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="home-posts__item">
+                                        <div class="home-posts__mark">
+                                            <ion-icon name="star-outline" class="home-posts__mark-icon"></ion-icon>
+                                        </div>
+                                        <a href="#" class="home-posts__img" style="background-image: url(./assets/images/1.jpg);"></a>
+                                        <div class="home-posts__content">
+                                            <div class="home-posts__release">
+                                                <span class="home-posts__release-minutes">2 min read</span>
+                                                <span class="home-posts__release-date">Nov 19, 2020</span>
+                                            </div>
+                                            <h2 class="home-posts__content-title">Believe and act as if it were impossible to fail</h2>
+                                            <p class="home-posts__content-excerp">Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum. Haec et tu ita posuisti, et verba vestra sunt. Idemne potest esse dies sa</p>
+                                            <div class="home-posts__bottom">
+                                                <a href="https://www.facebook.com/NDK20" class="home-posts__author">
+                                                    <img src="./assets/images/avt-author.jpg" alt="" class="home-posts__author-img">
+                                                    <span class="home-posts__author-name">Nguyễn Đăng Khải</span>
+                                                </a>
+                                                <div class="home-posts__label">
+                                                    <ul class="label-list">
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Life</a>
+                                                        </li>
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Rest</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="home-posts__item">
+                                        <div class="home-posts__mark">
+                                            <ion-icon name="star-outline" class="home-posts__mark-icon"></ion-icon>
+                                        </div>
+                                        <a href="#" class="home-posts__img" style="background-image: url(./assets/images/1.jpg);"></a>
+                                        <div class="home-posts__content">
+                                            <div class="home-posts__release">
+                                                <span class="home-posts__release-minutes">2 min read</span>
+                                                <span class="home-posts__release-date">Nov 19, 2020</span>
+                                            </div>
+                                            <h2 class="home-posts__content-title">Believe and act as if it were impossible to fail</h2>
+                                            <p class="home-posts__content-excerp">Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum. Haec et tu ita posuisti, et verba vestra sunt. Idemne potest esse dies sa</p>
+                                            <div class="home-posts__bottom">
+                                                <a href="https://www.facebook.com/NDK20" class="home-posts__author">
+                                                    <img src="./assets/images/avt-author.jpg" alt="" class="home-posts__author-img">
+                                                    <span class="home-posts__author-name">Nguyễn Đăng Khải</span>
+                                                </a>
+                                                <div class="home-posts__label">
+                                                    <ul class="label-list">
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Life</a>
+                                                        </li>
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Rest</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="home-posts__item">
+                                        <div class="home-posts__mark">
+                                            <ion-icon name="star-outline" class="home-posts__mark-icon"></ion-icon>
+                                        </div>
+                                        <a href="#" class="home-posts__img" style="background-image: url(./assets/images/1.jpg);"></a>
+                                        <div class="home-posts__content">
+                                            <div class="home-posts__release">
+                                                <span class="home-posts__release-minutes">2 min read</span>
+                                                <span class="home-posts__release-date">Nov 19, 2020</span>
+                                            </div>
+                                            <h2 class="home-posts__content-title">Believe and act as if it were impossible to fail</h2>
+                                            <p class="home-posts__content-excerp">Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum. Haec et tu ita posuisti, et verba vestra sunt. Idemne potest esse dies sa</p>
+                                            <div class="home-posts__bottom">
+                                                <a href="https://www.facebook.com/NDK20" class="home-posts__author">
+                                                    <img src="./assets/images/avt-author.jpg" alt="" class="home-posts__author-img">
+                                                    <span class="home-posts__author-name">Nguyễn Đăng Khải</span>
+                                                </a>
+                                                <div class="home-posts__label">
+                                                    <ul class="label-list">
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Life</a>
+                                                        </li>
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Rest</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="home-posts__item">
+                                        <div class="home-posts__mark">
+                                            <ion-icon name="star-outline" class="home-posts__mark-icon"></ion-icon>
+                                        </div>
+                                        <a href="#" class="home-posts__img" style="background-image: url(./assets/images/1.jpg);"></a>
+                                        <div class="home-posts__content">
+                                            <div class="home-posts__release">
+                                                <span class="home-posts__release-minutes">2 min read</span>
+                                                <span class="home-posts__release-date">Nov 19, 2020</span>
+                                            </div>
+                                            <h2 class="home-posts__content-title">Believe and act as if it were impossible to fail</h2>
+                                            <p class="home-posts__content-excerp">Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum. Haec et tu ita posuisti, et verba vestra sunt. Idemne potest esse dies sa</p>
+                                            <div class="home-posts__bottom">
+                                                <a href="https://www.facebook.com/NDK20" class="home-posts__author">
+                                                    <img src="./assets/images/avt-author.jpg" alt="" class="home-posts__author-img">
+                                                    <span class="home-posts__author-name">Nguyễn Đăng Khải</span>
+                                                </a>
+                                                <div class="home-posts__label">
+                                                    <ul class="label-list">
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Life</a>
+                                                        </li>
+                                                        <li class="label-item home-posts__label-item">
+                                                            <a href="" class="label-item-link home-posts__label-link">Rest</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- LOAD MORE  -->
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <button href="#" class="btn btn-load-more">Load More</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="grid wide">
+            <!-- FOOTER WIDGET -->
+        <div class="footer-widgets padding-l-r-20">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="row">
+                        <div class="widget col l-4 m-12 c-12">
+                            <h3 class="footer-widgets__title">Recent Post</h3>
+                            <div class="footer-widgets__recent">
+                                <div class="footer-widgets__recent-post">
+                                    <a href="#" class="recent-post__img">
+                                        <img src="./assets/images/3.jpg" alt="">
+                                    </a>
+                                    <div class="recent-post__content">
+                                        <div class="home-posts__release">
+                                            <span class="home-posts__release-minutes">2 min read</span>
+                                            <span class="home-posts__release-date">Nov 19, 2020</span>
+                                        </div>
+                                        <h4 class="recent-post__title">
+                                            <a href="#" class="recent-post__title-link">That which does not kill us makes us stronger</a>
+                                        </h4>
+                                        <div class="home-posts__bottom">
+                                            <a href="https://www.facebook.com/NDK20" class="home-posts__author">
+                                                <img src="./assets/images/avt-author.jpg" alt="" class="home-posts__author-img recent-post__author-img">
+                                                <span class="home-posts__author-name">Nguyễn Đăng Khải</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-widgets__recent-post">
+                                    <a href="#" class="recent-post__img">
+                                        <img src="./assets/images/3.jpg" alt="">
+                                    </a>
+                                    <div class="recent-post__content">
+                                        <div class="home-posts__release">
+                                            <span class="home-posts__release-minutes">2 min read</span>
+                                            <span class="home-posts__release-date">Nov 19, 2020</span>
+                                        </div>
+                                        <h4 class="recent-post__title">
+                                            <a href="#" class="recent-post__title-link">That which does not kill us makes us stronger</a>
+                                        </h4>
+                                        <div class="home-posts__bottom">
+                                            <a href="https://www.facebook.com/NDK20" class="home-posts__author">
+                                                <img src="./assets/images/avt-author.jpg" alt="" class="home-posts__author-img recent-post__author-img">
+                                                <span class="home-posts__author-name">Nguyễn Đăng Khải</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget col l-4 m-12 c-12">
+                            <h3 class="footer-widgets__title">Explore Tags</h3>
+                            <div class="footer-widgets__label">
+                                <ul class="label-list footer-widgets__label-list">
+                                    <li class="label-item footer-widgets__label-item">
+                                        <a href="#" class="label-item-link footer-widgets__label-link">Business</a>
+                                    </li>
+                                    <li class="label-item footer-widgets__label-item">
+                                        <a href="#" class="label-item-link footer-widgets__label-link">Fashion</a>
+                                    </li>
+                                    <li class="label-item footer-widgets__label-item">
+                                        <a href="#" class="label-item-link footer-widgets__label-link">Life</a>
+                                    </li>
+                                    <li class="label-item footer-widgets__label-item">
+                                        <a href="#" class="label-item-link footer-widgets__label-link">Lifestyle</a>
+                                    </li>
+                                    <li class="label-item footer-widgets__label-item">
+                                        <a href="#" class="label-item-link footer-widgets__label-link">Nature</a>
+                                    </li>
+                                    <li class="label-item footer-widgets__label-item">
+                                        <a href="#" class="label-item-link footer-widgets__label-link">Notes</a>
+                                    </li>
+                                    <li class="label-item footer-widgets__label-item">
+                                        <a href="#" class="label-item-link footer-widgets__label-link">Rest</a>
+                                    </li>
+                                    <li class="label-item footer-widgets__label-item">
+                                        <a href="#" class="label-item-link footer-widgets__label-link">Story</a>
+                                    </li>
+                                    <li class="label-item footer-widgets__label-item">
+                                        <a href="#" class="label-item-link footer-widgets__label-link">Technology</a>
+                                    </li>
+                                    <li class="label-item footer-widgets__label-item">
+                                        <a href="#" class="label-item-link footer-widgets__label-link">Travel</a>
+                                    </li>
+                                    <li class="label-item footer-widgets__label-item">
+                                        <a href="#" class="label-item-link footer-widgets__label-link">Work</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget col l-4 m-12 c-12">
+                            <h3 class="footer-widgets__title">Get Interesting News</h3>
+                            <p class="footer-widgets__subtitle">Subscribe to our newsletter and we’ll send you the emails of latest posts.</p>
+                            <div class="footer-widgets__subscribe-form">
+                                <input type="text" class="footer-widgets__subscribe-input" placeholder="Email Adress">
+                                <button class="btn footer-widgets__subscribe-btn">Join</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER  -->
+        <div class="row">
+            <div class="col l-12 m-12 c-12">
+                <div class="footer padding-l-r-20">
+                    <div class="footer-l">
+                        <p class="footer__copyright">
+                            2021 © 
+                            <a href="/" class="footer__copyright-link">Norlin</a>
+                            . All Right Reserved. Published with 
+                            <a href="/" class="footer__copyright-link">Ghost</a>
+                        </p>
+                    </div>
+                    <div class="footer-r">
+                        <ul class="footer__socials">
+                            <li class="footer__socials-item">
+                                <a href="#" class="btn footer__socials-item-link" title="Twitter">
+                                    <ion-icon name="logo-twitter" class="footer__socials-item-icon"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="#" class="btn footer__socials-item-link" title="Facebook">
+                                    <ion-icon name="logo-facebook" class="footer__socials-item-icon"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="#" class="btn footer__socials-item-link" title="Dribbble">
+                                    <ion-icon name="logo-dribbble" class="footer__socials-item-icon"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="#" class="btn footer__socials-item-link" title="Instagram">
+                                    <ion-icon name="logo-instagram" class="footer__socials-item-icon"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="#" class="btn footer__socials-item-link" title="Pinterest">
+                                    <ion-icon name="logo-pinterest" class="footer__socials-item-icon"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="#" class="btn footer__socials-item-link" title="Youtube">
+                                    <ion-icon name="logo-youtube" class="footer__socials-item-icon"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer__socials-item" title="Github">
+                                <a href="#" class="btn footer__socials-item-link">
+                                    <ion-icon name="logo-github" class="footer__socials-item-icon"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="#" class="btn footer__socials-item-link" title="Vimeo">
+                                    <ion-icon name="logo-vimeo" class="footer__socials-item-icon"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
